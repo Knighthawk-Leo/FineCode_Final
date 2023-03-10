@@ -225,6 +225,7 @@ nav {
   }
 
   .features .cards-section{
+    
       margin-top: 4rem;
     display: flex;
     gap: 20px;
@@ -237,7 +238,7 @@ nav {
     width: 100%;
     padding: 3rem 3rem;
     position: relative;
-    flex: 1 1;
+    flex: 1 1 ;
   }
 
   /* .features .cards-section .cards .vector{
@@ -270,13 +271,60 @@ nav {
     font-size: 1.5rem;
   }
 
+  /* NewsLetter */
+  .newsletter{
+    top: 10%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.8rem 12%;
+    margin-bottom: 10%;
+    gap: 10rem;
+    font-family: 'Urbanist', sans-serif;
+  }
 
+  .text-area-new {
+    padding-right: 10rem;
+    color: var(--quad-color);
+    font-size: 3rem;
+  }
 
+  .text-area-new h2{
+    font-family: 'Clash Display' , sans-serif;
+  }
+  .text-area-new p{
+    color: var(--tertiary-color);
+  }
 
+  .input-button{
+    color: var(--primary-color);
+    position: relative;
+  }
 
+  ::placeholder{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: black;
+    opacity: 0.7;
+  }
 
+  .input-button input{
+    padding: 1.5rem 3rem 1.5rem 1rem;
+    width: 20vw;
+  }
 
-
+  .input-button button{
+    font-family: 'urbanist' ,sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border: none;
+    background-color: var(--tertiary-color);
+    padding: 1rem ;
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+  }
 
 
 
@@ -299,7 +347,6 @@ nav {
   
   /*Hero*/
   .hero{
-    
     grid-template-rows:2fr 2fr;
   }
   .laptop{
@@ -314,6 +361,10 @@ nav {
 }
 
 @media (max-width:1090px) {
+  nav , .hero , .features {
+    padding: 1.4rem 2%;
+  }
+
   /* Navbar */
   #menu-icon{
     display: block;
@@ -324,7 +375,7 @@ nav {
     top: -1000000%;
     right: 0%;
     width: 100%;
-    height: 30vh;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -373,24 +424,27 @@ nav {
     margin-top: 10%;
   }
 
+  
+
+  /* features */
   .features{
     align-items: center;
     margin: 4rem;
   }
 
-  /* features */
   .features .cards-section{
     flex-direction: column;
     align-items: center;
     width: 100%;
   }
-  .features .cards-section .cards{
-    flex-wrap: wrap;
-    width: 100%;
-  }
 }
 
 @media (max-width:420px) {
+
+  nav , .hero , .features {
+    padding: 1.4rem 2%;
+  }
+
   .menu{
     position: absolute;
     top: -1000000%;
