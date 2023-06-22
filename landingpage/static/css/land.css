@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url('https://fonts.cdnfonts.com/css/clash-display');
+@import url("https://fonts.cdnfonts.com/css/clash-display");
 :root {
   /* FONTS */
   --primary-font: ClashDisplay-Bold;
@@ -32,11 +32,11 @@
 
 html {
   font-size: 10px;
-    font-family: "Urbanist", sans-serif;
+  font-family: "Urbanist", sans-serif;
   /* background-color: #393E46; */
   overflow-x: hidden;
 }
-body{
+body {
   background-color: var(--primary-color);
 }
 
@@ -55,8 +55,8 @@ nav {
   /* transition: all .50s ease; */
 }
 
-.logo{
-  font-family: 'Clash Display',sans-serif;
+.logo {
+  font-family: "Clash Display", sans-serif;
   font-weight: 800;
   display: flex;
   align-items: center;
@@ -82,34 +82,34 @@ nav {
   margin: 0px 4rem;
   font-size: 1.5rem;
 }
-.buttons{
+.buttons {
   display: flex;
   align-items: center;
 }
 
-.buttons a{
-    margin-right: 1rem;
-    margin-left: 1rem;
-    color: var(--quad-color);
-    font-size: 1.5rem;
-    font-weight: 600;
-    padding: 1rem 2rem;
+.buttons a {
+  margin-right: 1rem;
+  margin-left: 1rem;
+  color: var(--quad-color);
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
 }
 
-.buttons .user{
-    background-color: var(--primary-color);
-    border: 1px solid #4ecca3;
+.buttons .user {
+  background-color: var(--primary-color);
+  border: 1px solid #4ecca3;
 }
 
-.buttons .register{
-    background-color: var(--secondary-color);
-    border: 1px solid var(--primary-color);
+.buttons .register {
+  background-color: var(--secondary-color);
+  border: 1px solid var(--primary-color);
 }
-.toggle-button{
-    display: none;
+.toggle-button {
+  display: none;
 }
 
-#menu-icon{
+#menu-icon {
   font-size: 35px;
   color: var(--quad-color);
   cursor: pointer;
@@ -117,11 +117,9 @@ nav {
   display: none;
 }
 
-
-
 /* Hero */
 
-.hero{
+.hero {
   position: relative;
   display: grid;
   grid-template-columns: 2fr 2fr;
@@ -129,26 +127,27 @@ nav {
   top: 15%;
 }
 
-.hero-left{
+.hero-left {
   display: flex;
   flex-direction: column;
+  
   top: 0;
   color: var(--quad-color);
 }
 
-.hero-left .main-text{
-  font-family: 'Clash Display',sans-serif;
+.hero-left .main-text {
+  font-family: "Clash Display", sans-serif;
   font-size: 7rem;
+
   font-weight: 800;
 }
 
-.hero-left .main-text-p{
+.hero-left .main-text-p {
   font-size: 1.5rem;
   letter-spacing: 2px;
 }
 
-
-.laptop{
+.laptop {
   position: relative;
   width: 100%;
   height: 100%;
@@ -156,23 +155,22 @@ nav {
   right: -20%;
 }
 
-.hero .room-code{
+.hero .room-code {
   position: relative;
   margin-top: 4rem;
-
 }
 
-.hero .room-code input{
+.hero .room-code input {
   outline: none;
   width: 50%;
   padding: 1.05rem;
-  font-family: 'Urbanist' ,sans-serif;
+  font-family: "Urbanist", sans-serif;
   font-size: 1.5rem;
 }
 
-.hero .room-code .join-room-button{
+.hero .room-code .join-room-button {
   position: absolute;
-  top: 0 ;
+  top: 0;
   right: 50%;
   border: 0.24rem solid var(--tertiary-color);
   background-color: var(--tertiary-color);
@@ -180,7 +178,7 @@ nav {
   font-size: 1.5rem;
 }
 
-.hero .room-code .create-room-button{
+.hero .room-code .create-room-button {
   margin-left: 2rem;
   color: var(--quad-color);
   border: 0.1rem solid var(--tertiary-color);
@@ -188,189 +186,332 @@ nav {
   font-size: 1.5rem;
 }
 
-
-.hero .btn{
+.hero .btn {
   padding: 1rem;
-} 
-
+}
 
 /* Featues */
- .features{
-    top: 10%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    padding: 2.8rem 12%;
-    margin-bottom: 10%;
-  }
+.features {
+  top: 10%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 2.8rem 12%;
+  margin-bottom: 10%;
+}
 
-  .features .text-area{
-    color: var(--quad-color);
-    font-size: 2rem;
-  }
+.features .text-area {
+  color: var(--quad-color);
+  font-size: 2rem;
+}
 
-  .features .text-area h1{
-    font-family: 'Clash Display' , sans-serif;
-  }
-  .features .text-area h1 span{
-    color: var(--tertiary-color);
-  }
+.features .text-area h1 {
+  font-family: "Clash Display", sans-serif;
+}
+.features .text-area h1 span {
+  color: var(--tertiary-color);
+}
 
-  .features .text-area p{
-    font-family: 'Urbanist' , sans-serif;
-    margin-top: 2rem;
-    font-size: 1.5rem;
-    opacity: 0.7;
-    letter-spacing: 1px;
-  }
+.features .text-area p {
+  font-family: "Urbanist", sans-serif;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  opacity: 0.7;
+  letter-spacing: 1px;
+}
 
-  .features .cards-section{
-    
-      margin-top: 4rem;
-    display: flex;
-    gap: 20px;
-    font-family: 'Urbanist', sans-serif;
-  }
+.features .cards-section {
+  margin-top: 4rem;
+  display: flex;
+  gap: 20px;
+  font-family: "Urbanist", sans-serif;
+}
 
+.features .cards-section .cards {
+  background-color: var(--tertiary-color);
+  width: 100%;
+  padding: 3rem 3rem;
+  position: relative;
+  flex: 1 1;
+}
 
-  .features .cards-section .cards{
-    background-color: var(--tertiary-color);
-    width: 100%;
-    padding: 3rem 3rem;
-    position: relative;
-    flex: 1 1 ;
-  }
-
-  /* .features .cards-section .cards .vector{
+/* .features .cards-section .cards .vector{
     display: flex;
   } */
 
-  .features .cards-section .cards h4 {
-    margin-bottom: 1rem;
-    font-size: 2rem;
+.features .cards-section .cards h4 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.features .cards-section .cards p {
+  line-height: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 7rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.features .cards-section .cards hr {
+  opacity: 0.2;
+  border: 1px solid black;
+}
+
+.features .cards-section .cards img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+
+/* NewsLetter */
+.newsletter {
+  top: 10%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2.8rem 12%;
+  margin-bottom: 10%;
+  gap: 10rem;
+  font-family: "Urbanist", sans-serif;
+}
+
+.text-area-new {
+  padding-right: 10rem;
+  color: var(--quad-color);
+  font-size: 3rem;
+}
+
+.text-area-new h2 {
+  font-family: "Clash Display", sans-serif;
+}
+.text-area-new p {
+  color: var(--tertiary-color);
+}
+
+.input-button {
+  color: var(--primary-color);
+  position: relative;
+}
+
+::placeholder {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: black;
+  opacity: 0.7;
+}
+
+.input-button input {
+  padding: 1.5rem 3rem 1.5rem 1rem;
+  width: 20vw;
+}
+
+.input-button button {
+  font-family: "urbanist", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border: none;
+  background-color: var(--tertiary-color);
+  padding: 1rem;
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  color: white;
+  padding: 2.8rem 12%;
+
+  border-radius: 10px;
+}
+
+.subscribe__title {
+  font-weight: bold;
+  font-size: 5rem;
+  margin-bottom: 18px;
+}
+
+.subscribe__copy {
+  max-width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  font-size: 2rem;
+}
+
+  .form {
+    margin-bottom: 25px;
   }
-  
-  .features .cards-section .cards p {
-    line-height: 3rem;
-    margin-top: 2rem;
-    margin-bottom: 7rem;
-    font-size: 1.5rem;
-    font-weight: 500;
-  }
 
-  .features .cards-section .cards hr {
-    opacity: 0.2;
-    border: 1px solid black;
-  }
+.form__email {
+  padding: 20px 25px;
+  border-radius: 5px;
+  border: 1px solid #cad3db;
+  width: 431px;
+  font-size: 18px;
+  color: #0f121f;
+}
 
-  .features .cards-section .cards img {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin-top: 2rem;
-    font-size: 1.5rem;
-  }
+.form__email:focus {
+  outline: 1px solid var(--tertiary-color);
+}
 
-  /* NewsLetter */
-  .newsletter{
-    top: 10%;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2.8rem 12%;
-    margin-bottom: 10%;
-    gap: 10rem;
-    font-family: 'Urbanist', sans-serif;
-  }
+.form__button {
+  background: var(--tertiary-color);
+  padding: 10px;
+  border: none;
+  width: 244px;
+  height: 65px;
+  border-radius: 5px;
+  font-size: 18px;
+  color: white;
 
-  .text-area-new {
-    padding-right: 10rem;
-    color: var(--quad-color);
-    font-size: 3rem;
-  }
-
-  .text-area-new h2{
-    font-family: 'Clash Display' , sans-serif;
-  }
-  .text-area-new p{
-    color: var(--tertiary-color);
-  }
-
-  .input-button{
-    color: var(--primary-color);
-    position: relative;
-  }
-
-  ::placeholder{
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: black;
-    opacity: 0.7;
-  }
-
-  .input-button input{
-    padding: 1.5rem 3rem 1.5rem 1rem;
-    width: 20vw;
-  }
-
-  .input-button button{
-    font-family: 'urbanist' ,sans-serif;
-    font-size: 1.5rem;
-    font-weight: 700;
-    border: none;
-    background-color: var(--tertiary-color);
-    padding: 1rem ;
-    position: absolute;
-    top: 0.5rem;
-    right: 1rem;
-  }
+}
 
 
+.notice {
+  color: white;
+  font-size: 2rem;
+  width: 100%;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+
+.footer{
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: var(--tertiary-color);
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+.social-links a i{
+  position: relative;
+  top: 15px;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
 
 
-
-
-@media (max-width:1280px) {
+@media (max-width: 1280px) {
   /* Navbar */
-  html{
-    overflow-x: hidden   ;
+  html {
+    overflow-x: hidden;
   }
-  nav{
+  nav {
     padding: 2.8rem 12%;
   }
 
-  .menu a{
+  .menu a {
     padding: 5px 0;
     margin: 0px 2.5rem;
   }
-  
+
   /*Hero*/
-  .hero{
-    grid-template-rows:2fr 2fr;
+  .hero {
+    grid-template-rows: 2fr 2fr;
   }
-  .laptop{
+  .laptop {
     top: 0;
     right: 0;
-
   }
 
-  .features{
+  .features {
     top: 0%;
   }
 }
 
-@media (max-width:1090px) {
-  nav , .hero , .features {
+@media (max-width: 1090px) {
+  nav,
+  .hero,
+  .features {
     padding: 1.4rem 2%;
   }
 
   /* Navbar */
-  #menu-icon{
+  #menu-icon {
     display: block;
   }
 
-  .menu{
+  .menu {
     position: absolute;
     top: -1000000%;
     right: 0%;
@@ -384,68 +525,74 @@ nav {
     z-index: 100;
   }
 
-  .menu a{
+  .menu a {
     display: block;
     padding: 1rem 0;
     margin: 12px 0;
   }
 
-  .menu.open{
+  .menu.open {
     top: 100%;
   }
 
   /* Hero */
-  .hero{
+  .hero {
     display: flex;
     flex-direction: column;
     top: 5%;
   }
 
-  .hero-left{
+  .hero-left {
     justify-content: center;
     align-items: center;
-  }
 
-  .hero-left p{
-    margin-left: 4rem;
   }
-  .hero .room-code input{
-
+  .room-code{
     width: 100%;
-  }
-  .hero .room-code .join-room-button{
-
-    position: absolute;
-    right: -10%;
-  }
-  .hero .room-code .create-room-button{
-    display: flex;
-    justify-content: center;
-    margin-top: 10%;
-  }
 
   
+  }
+
+  .hero-left p {
+    margin-left: 4rem;
+  }
+  .hero .room-code input {
+    width: 80%;
+  }
+  .hero .room-code .join-room-button {
+    position: absolute;
+    right: 0%;
+  }
+  .hero .room-code .create-room-button {
+    margin-top: 5%;
+    margin-left: 30%;
+  }
 
   /* features */
-  .features{
+  .features {
     align-items: center;
     margin: 4rem;
   }
 
-  .features .cards-section{
+  .features .cards-section {
     flex-direction: column;
     align-items: center;
     width: 100%;
   }
 }
 
-@media (max-width:420px) {
-
-  nav , .hero , .features {
+@media (max-width: 420px) {
+  nav,
+  .hero,
+  .features {
     padding: 1.4rem 2%;
+    
+  }
+  .hero-left .main-text {
+    text-align: center;
   }
 
-  .menu{
+  .menu {
     position: absolute;
     top: -1000000%;
     right: 0%;
@@ -458,13 +605,20 @@ nav {
     background-color: black;
     z-index: 100;
   }
-  .logo{
+  .logo {
     font-size: 2rem;
   }
 
-  .buttons .user ,.buttons .register{
+  .buttons .user,
+  .buttons .register {
     font-size: 0.8rem;
     padding: 0.5rem 1rem;
   }
-}
 
+  .form__email{
+    width: 300px;
+  }
+  .form__button{
+    margin-top: 10px;
+  }
+}
