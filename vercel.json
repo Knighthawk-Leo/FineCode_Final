@@ -8,7 +8,7 @@
 
         },
         {
-            "Src":"build_files.sh",
+            "src":"build_files.sh",
             "use": "@versel/static-build",
             "config": {
                 "distDir":"staticfiles_bulid"
