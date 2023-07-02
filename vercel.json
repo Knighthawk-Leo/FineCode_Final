@@ -1,0 +1,29 @@
+{
+    "version":2,
+    "builds":[
+        {
+            "src":"finecode/wsgi.py",
+            "use":"@versel/python",
+            "config": { "maxLambdaSize": "15mb", "runtime": "python3.9"}
+
+        },
+        {
+            "Src":"build_files.sh",
+            "use": "@versel/static-build",
+            "config": {
+                "distDir":"staticfiles_bulid"
+            }
+        }
+
+    ],
+    "routes": [
+        {
+            "src":"/static/(.*)",
+            "dest":"/static/$1"
+        },
+        {
+            "src":"/(.*)",
+            "dest": "finecode/wsgi.py"
+        }
+    ]
+}

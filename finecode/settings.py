@@ -26,7 +26,7 @@ SECRET_KEY = '@d963vhv%0@yi4$dfd5qp8h55x$zevqwcxqhwd7fv+hh8-#xfe'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['.vercel.app','.now.sh']
 
 
 # Application definition
@@ -136,7 +136,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'finecode/static'),
+    os.path.join(BASE_DIR,'staticfiles_build', 'finecode/static'),
 ]
 
 LOGIN_URL = 'users:login'
